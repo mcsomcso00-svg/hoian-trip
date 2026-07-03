@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>索安邦海灘水療度假村 Sol An Bang · 會安 4日3夜行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#0d6e6e; --brand-dark:#083f43; --brand-light:#e3f2f0;
+  --gold:#d99a2b; --gold-soft:#f7ecd3; --coral:#df6038; --coral-soft:#fbe3d8;
+  --sand:#fbf7f0; --card:#fff; --ink:#1f2a37; --muted:#5f6b78; --line:#e9e0d0;
+  --shadow:0 1px 2px rgba(8,63,67,.05), 0 8px 24px rgba(8,63,67,.08); --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif;color:var(--ink);background:var(--sand);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Noto Serif TC','Noto Sans TC',serif;line-height:1.35;font-weight:900}
+a{color:var(--brand)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.hero{color:#fff;overflow:hidden;background:radial-gradient(1000px 360px at 82% -10%,rgba(217,154,43,.35),transparent 60%),radial-gradient(800px 460px at 0% 120%,rgba(223,96,56,.30),transparent 55%),linear-gradient(135deg,#0d6e6e,#083f43)}
+.hero-inner{padding:46px 0 40px}
+.hero .eyebrow{letter-spacing:.24em;font-size:.72rem;font-weight:700;opacity:.9;text-transform:uppercase}
+.hero h1{font-size:clamp(1.7rem,4.6vw,2.7rem);margin:.35em 0 .1em;color:#fff}
+.hero .sub{font-size:1.02rem;opacity:.95;max-width:660px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:8px 13px;border-radius:999px;font-size:.88rem;font-weight:500}
+.chip b{font-weight:800}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hbtn{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4);padding:10px 16px;border-radius:999px;font-weight:800;font-size:.9rem;text-decoration:none}
+section{padding:38px 0 6px}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.sec-head .k{font-size:1.8rem}
+.sec-head h2{font-size:clamp(1.35rem,3.2vw,1.9rem);color:var(--brand-dark)}
+.divider{height:3px;width:52px;background:linear-gradient(90deg,var(--gold),var(--coral));border-radius:3px;margin:6px 0 18px}
+.sec-desc{color:var(--muted);max-width:740px;margin-bottom:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:760px){.grid,.g2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.card h3{font-size:1.06rem;color:var(--brand-dark);margin-bottom:6px}
+.card ul{margin:6px 0 0 18px}
+.note{border-left:5px solid var(--gold);background:var(--gold-soft);padding:16px 18px;border-radius:10px;margin:14px 0}
+.note.info{border-color:var(--brand);background:var(--brand-light)}
+.note.warn{border-color:var(--coral);background:var(--coral-soft)}
+.note .t{font-weight:800;display:block;margin-bottom:3px}
+.note b{color:var(--brand-dark)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;margin-bottom:6px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:520px}
+thead th{background:var(--brand-dark);color:#fff;text-align:left;padding:11px 14px;font-weight:700;white-space:nowrap}
+tbody td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:#fcfaf5}
+.near{color:#2a8c6a;font-weight:800;white-space:nowrap}
+.far{color:var(--coral);font-weight:800;white-space:nowrap}
+.cost{font-weight:800;color:var(--coral);white-space:nowrap}
+.free{color:#2a8c6a;font-weight:800}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.t-see{background:var(--brand-light);color:var(--brand-dark)}
+.t-eat{background:var(--coral-soft);color:#b23c1f}
+.t-play{background:var(--gold-soft);color:#8a6111}
+.t-move{background:#eef1f2;color:#4a5a61}
+.t-rest{background:#e7e6f3;color:#544a86}
+.cat-see{background:#e6eef8}
+.cat-eat{background:#fbeada}
+.cat-stay{background:#e0f0e9}
+.cat-spa{background:#eee7f6}
+.cat-move{background:#eceff2}
+.day{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px;overflow:hidden}
+.day-head{background:linear-gradient(135deg,var(--brand),var(--brand-dark));color:#fff;padding:18px 22px}
+.day-head .n{font-size:.78rem;letter-spacing:.18em;opacity:.85;font-weight:700}
+.day-head h3{color:#fff;font-size:1.25rem;margin-top:2px}
+.day-head .theme{opacity:.95;font-size:.92rem;margin-top:4px}
+.day-head .rlink{display:inline-flex;align-items:center;gap:6px;color:#fff;font-weight:800;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);padding:6px 13px;border-radius:999px;text-decoration:none;font-size:.83rem;margin-top:10px}
+.sched td.time{font-weight:800;color:var(--brand-dark);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sched td.act .a{font-weight:700}
+.sched td.act .loc{color:var(--muted);font-size:.82rem;margin-top:2px}
+.sched td.tip{color:var(--muted);font-size:.85rem}
+.sched{min-width:600px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:2px 0 10px;font-size:.85rem;color:var(--muted)}
+.booklinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.booklinks a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-weight:800;font-size:.9rem;text-decoration:none;color:var(--brand-dark);box-shadow:var(--shadow)}
+.rate{font-size:.82rem;color:var(--muted)}
+summary{cursor:pointer;font-family:'Noto Serif TC','Noto Sans TC',serif;font-weight:900;color:var(--brand-dark);font-size:1.1rem;padding:6px 0}
+.bar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 2px 12px rgba(8,63,67,.06)}
+.bar .scroll{display:flex;gap:4px;overflow-x:auto;padding:8px 14px;max-width:1000px;margin:0 auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.bar .scroll::-webkit-scrollbar{display:none}
+.bar a{white-space:nowrap;padding:7px 13px;border-radius:999px;color:var(--ink);font-weight:700;font-size:.9rem;text-decoration:none;transition:.15s}
+.bar a:hover{background:var(--brand-light);color:var(--brand-dark)}
+section,.day{scroll-margin-top:70px}
+.totop{position:fixed;right:16px;bottom:16px;background:var(--brand-dark);color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);font-size:1.15rem;opacity:0;pointer-events:none;transition:.25s;z-index:120;border:none;cursor:pointer}
+.totop.show{opacity:1;pointer-events:auto}
+.checklist li{display:flex;align-items:flex-start;gap:9px}
+.checklist input{margin-top:5px;accent-color:var(--brand);width:16px;height:16px}
+footer{background:var(--brand-dark);color:#cfe4e2;padding:30px 0;margin-top:38px;font-size:.86rem}
+@media print{.bar,.totop,.btns,.hbtn,.day-head .rlink{display:none!important}.hero{color:#083f43;background:#fff!important;border-bottom:2px solid var(--brand)}.hero .chip{background:#eee;color:#083f43}.card,.tbl-wrap,.day{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">住宿基地 · 會安 An Bang 海灘</div>
+    <h1>索安邦海灘水療度假村<br>Sol An Bang Beach Resort &amp; Spa</h1>
+    <p class="sub">4 星海灘度假村 · 會安 An Bang Beach（Cam An）· 距會安古鎮僅 4km。以會安古鎮與海灘為家，慢活兼順路，峴港景點集中一日北上。</p>
+    <div class="chips">
+      <span class="chip">⭐ 4 星</span>
+      <span class="chip">📍 An Bang 海灘 · 會安</span>
+      <span class="chip">💵 約 <b>HKD 380–440 / 晚</b></span>
+      <span class="chip">🏖️ 私人海灘 + 泳池</span>
+      <span class="chip">🏮 會安古鎮 ~10–15 分</span>
+    </div>
+    <div class="btns">
+      <a class="hbtn" href="https://www.google.com/maps/search/Sol+An+Bang+Beach+Resort+and+Spa" target="_blank" rel="noopener">📍 Google 地圖睇位置</a>
+      <a class="hbtn" href="#overview">🗓️ 睇 4 日行程</a>
+      <button class="hbtn" onclick="window.print()" style="cursor:pointer;font-family:inherit;font-size:.9rem">🖨️ 列印 / 儲存 PDF</button>
+    </div>
+  </div>
+</header>
+
+<nav class="bar">
+  <div class="scroll">
+    <a href="#hotel">酒店</a>
+    <a href="#location">位置車程</a>
+    <a href="#overview">總覽</a>
+    <a href="#day1">Day 1</a>
+    <a href="#day2">Day 2</a>
+    <a href="#day3">Day 3</a>
+    <a href="#day4">Day 4</a>
+    <a href="#seafood">🦐 海鮮</a>
+    <a href="#budget">💰 預算</a>
+    <a href="#book">預訂</a>
+    <a href="#tips">貼士</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="hotel">
+  <div class="sec-head"><span class="k">🏨</span><h2>酒店概覽</h2></div>
+  <div class="divider"></div>
+  <p class="sec-desc">地址 72 Nguyen Phan Vinh St, Cam An Ward, Hoi An。4 星海灘度假村，私人海灘 + 泳池 + Spa，距會安古鎮 ~4km、峴港機場 ~30–40 分鐘。</p>
+  <div class="grid">
+    <div class="card"><h3>🏊 設施</h3><ul><li>戶外泳池 + 日光椅 + 沙灘吧</li><li>Spa / 桑拿 / 健身室</li><li>2 間餐廳（越式菜）</li><li>私人沙灘</li></ul></div>
+    <div class="card"><h3>🏖️ 海灘</h3><ul><li>An Bang 海灘（度假村私人沙灘段）</li><li>會安最靚海灘之一、較寧靜</li></ul></div>
+    <div class="card"><h3>🛏️ 房間 & 早餐</h3><ul><li>房間舒適、職員友善（評價正）</li><li>早餐美味、選擇多</li></ul></div>
+  </div>
+  <div class="note warn"><span class="t">⚠️ 老實提提你</span>部分評價提到 <b>An Bang 公共海灘有時較多雜物/欠清潔</b>（季節性）。度假村<b>私人沙灘段</b>一般較好；介意海灘質素可主要用泳池。</div>
+  <div class="note info"><span class="t">💡 一句總結</span>會安 + 海灘控嘅理想基地：<b>古鎮 10 分鐘、椰林 15 分鐘、五行山 20 分鐘</b>；但峴港市區/龍橋/山茶較遠（40–60 分），要集中一日北上。</div>
+</section>
+
+<section id="location">
+  <div class="sec-head"><span class="k">📍</span><h2>位置與車程</h2></div>
+  <div class="divider"></div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>由 Sol An Bang 出發</th><th>距離</th><th>車程</th><th>備註</th></tr></thead>
+    <tbody>
+      <tr><td>會安古鎮 Hoi An</td><td>~4 km</td><td class="near">~10–15 分</td><td>燈籠夜必去 ⭐</td></tr>
+      <tr><td>An Bang 私人海灘</td><td>門口</td><td class="near">步行</td><td>度假村沙灘 ⭐</td></tr>
+      <tr><td>椰林籃船 Cam Thanh</td><td>~7 km</td><td class="near">~15 分</td><td>好玩 ⭐</td></tr>
+      <tr><td>五行山 Marble Mountains</td><td>~14 km</td><td>~20 分</td><td>北上順路</td></tr>
+      <tr><td>峴港機場 DAD</td><td>~26 km</td><td>~30–40 分</td><td>—</td></tr>
+      <tr><td>峴港市中心 · 龍橋 · 韓市場</td><td>~30 km</td><td class="far">~40–45 分</td><td>集中一日去</td></tr>
+      <tr><td>山茶 · 靈應寺</td><td>~40 km</td><td class="far">~55–60 分</td><td>太遠 · optional</td></tr>
+      <tr><td>巴拿山</td><td>~45 km</td><td class="far">~60–75 分</td><td>全日團</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="overview">
+  <div class="sec-head"><span class="k">🗓️</span><h2>4 日行程總覽</h2></div>
+  <div class="divider"></div>
+  <div class="note info"><span class="t">🏨 Sol An Bang 版・優化邏輯（會安為家）</span>會安古鎮同海灘就喺門口，峴港景點較遠，所以：<br>· <b>Day 1</b> 到埗歎 An Bang 海灘，傍晚會安古鎮燈籠夜（近）<br>· <b>Day 2</b> 巴拿山全日<br>· <b>Day 3</b> 北上一日：五行山 → 峴港市區手信 → 龍橋噴火<br>· <b>Day 4</b> 會安/海灘慢活 + 椰林籃船 + 手信 → 回港（山茶太遠 · optional）</div>
+  <div class="legend"><span><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#e6eef8;vertical-align:middle;margin-right:5px"></span>景點</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#fbeada;vertical-align:middle;margin-right:5px"></span>食物</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#e0f0e9;vertical-align:middle;margin-right:5px"></span>酒店/機場</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#eee7f6;vertical-align:middle;margin-right:5px"></span>按摩</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#eceff2;vertical-align:middle;margin-right:5px"></span>交通</span></div>
+  <details open>
+    <summary>4 日總覽（一眼睇晒 · 撳標題可摺疊）</summary>
+    <div class="tbl-wrap" style="margin-top:8px"><table>
+      <thead><tr><th>時段</th><th>Day 1 · 抵達</th><th>Day 2 · 巴拿山</th><th>Day 3 · 峴港市區</th><th>Day 4 · 會安/回港</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:800;color:var(--brand-dark);white-space:nowrap">上午<div style="font-weight:400;color:var(--muted);font-size:.8rem">08:00–12:00</div></td><td class="cat-stay">✈️ 抵達 · An Bang 入住</td><td class="cat-see">巴拿山纜車 · 佛手金橋</td><td class="cat-see">五行山 · 峴港市區</td><td class="cat-see">An Bang 海灘 · 椰林籃船</td></tr>
+        <tr><td style="font-weight:800;color:var(--brand-dark);white-space:nowrap">午餐<div style="font-weight:400;color:var(--muted);font-size:.8rem">12:00–13:30</div></td><td class="cat-eat">（抵達後）</td><td class="cat-eat">山上午餐</td><td class="cat-eat">Bún Chả Cá 109 · 韓市場手信</td><td class="cat-eat">會安 / An Bang 午餐</td></tr>
+        <tr><td style="font-weight:800;color:var(--brand-dark);white-space:nowrap">下午<div style="font-weight:400;color:var(--muted);font-size:.8rem">13:30–17:30</div></td><td class="cat-see">An Bang 私人海灘 + 泳池</td><td class="cat-see">法國村 · Fantasy Park · 下山</td><td class="cat-see">韓市場 · APEC · 咖啡</td><td class="cat-spa">退房 · 最後按摩</td></tr>
+        <tr><td style="font-weight:800;color:var(--brand-dark);white-space:nowrap">傍晚<div style="font-weight:400;color:var(--muted);font-size:.8rem">17:30–19:30</div></td><td class="cat-see">會安古鎮 · 燈籠亮起</td><td class="cat-spa">酒店 Spa / 晚餐</td><td class="cat-eat">An Thuong 海鮮晚餐</td><td class="cat-stay">Grab 往機場</td></tr>
+        <tr><td style="font-weight:800;color:var(--brand-dark);white-space:nowrap">晚上<div style="font-weight:400;color:var(--muted);font-size:.8rem">19:30–22:30</div></td><td class="cat-see">秋盆河燈籠船 · 放水燈</td><td class="cat-eat">會安 / An Bang 晚餐</td><td class="cat-see">🐉 龍橋噴火（週末）</td><td class="cat-stay">✈️ 回港</td></tr>
+      </tbody>
+    </table></div>
+  </details>
+  <details style="margin-top:16px">
+    <summary>✅ 出發前清單（撳開 · 可逐項剔）</summary>
+    <div class="card" style="margin-top:10px">
+      <ul class="checklist" style="list-style:none;margin:0;padding:0;display:grid;gap:9px">
+        <li><input type="checkbox" id="c1"><label for="c1">訂機票（現約 HKD 2,700/人 · 盡早訂）</label></li>
+        <li><input type="checkbox" id="c2"><label for="c2">辦 e-Visa ×2（官網 evisa.gov.vn · US$25/人 · 預留 3–7 個工作天 · <b>列印</b>）</label></li>
+        <li><input type="checkbox" id="c3"><label for="c3">訂 Sol An Bang 3 晚（Agoda / Booking 格價）</label></li>
+        <li><input type="checkbox" id="c4"><label for="c4">Klook 訂巴拿山門票（平過現場）+ 安排 Day 2 包車</label></li>
+        <li><input type="checkbox" id="c5"><label for="c5">裝 Viettel eSIM ×2（~HKD 40–60/人）+ 下載 Grab</label></li>
+        <li><input type="checkbox" id="c6"><label for="c6">帶全新美金現鈔（金舖換匯最抵）+ 少量 VND</label></li>
+        <li><input type="checkbox" id="c7"><label for="c7">執行李：萬能轉插、防曬、泳衣、薄外套（巴拿山涼）、雨傘</label></li>
+        <li><input type="checkbox" id="c8"><label for="c8">訂 Day 1 會安晚餐位（旺季）+ 預約按摩</label></li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="daily">
+  <div class="sec-head"><span class="k">📋</span><h2>每日詳細時間表</h2></div>
+  <div class="divider"></div>
+  <p class="sec-desc">30 分鐘為單位，2 人同行。首尾兩日按<b>下午約 13:00 抵達 / 傍晚約 19:00 回程</b>編排，收到航班再微調。</p>
+  <p class="rate" style="margin-bottom:14px">📱 手機睇表可<b>左右捲動</b>；「預算(2人)」為該項 2 人合共；撳「地圖」即開 Google Maps 導航。</p>
+  <div class="legend"><span>🏛️ <span class="tag t-see">景點</span></span><span>🍜 <span class="tag t-eat">用餐</span></span><span>🎡 <span class="tag t-play">玩樂</span></span><span>💆 <span class="tag t-rest">休息/按摩</span></span><span>🚗 <span class="tag t-move">交通</span></span></div>
+
+  <div class="day" id="day1">
+    <div class="day-head"><div class="n">DAY 1 · 抵達日</div><h3>✈️ 抵達 · An Bang 海灘 · 會安燈籠夜</h3><div class="theme">到埗歎私人海灘，傍晚 10 分鐘去會安古鎮睇燈籠、坐燈籠船</div><a class="rlink" href="https://www.google.com/maps/dir/Sol+An+Bang+Beach+Resort+and+Spa/Hoi+An+Ancient+Town" target="_blank" rel="noopener">🗺️ 本日 Google 地圖路線 ↗</a></div>
+    <div class="tbl-wrap"><table class="sched">
+      <thead><tr><th>時間</th><th>行程</th><th>貼士</th><th>預算(2人)</th></tr></thead>
+      <tbody>
+        <tr><td class="time">上午</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">✈️ 香港 → 峴港 航班（時間待定）</div></td><td class="tip">備妥 e-Visa 列印本</td><td class="cost">見機票</td></tr>
+        <tr><td class="time">13:00–13:45</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">抵達峴港機場 · 入境 · 取行李</div></td><td class="tip">出關到航廈外叫 Grab</td><td class="free">—</td></tr>
+        <tr><td class="time">13:45–14:30</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">Grab 前往 Sol An Bang</div><div class="loc">機場 → An Bang 約 30–40 分鐘</div></td><td class="tip">會安方向；車程比市區酒店長</td><td class="cost">~HKD 130–160</td></tr>
+        <tr><td class="time">14:30–15:00</td><td class="act"><span class="tag t-rest">休息</span><div class="a" style="margin-top:4px">酒店 Check-in · 放行李</div></td><td class="tip">未到入房可先寄存</td><td class="free">—</td></tr>
+        <tr><td class="time">15:00–17:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">An Bang 私人海灘 + 泳池 hea</div><div class="loc">度假村內</div></td><td class="tip">避正午暴曬；沙灘吧歎嘢</td><td class="free">免費</td></tr>
+        <tr><td class="time">17:00–17:30</td><td class="act"><span class="tag t-rest">休息</span><div class="a" style="margin-top:4px">梳洗準備</div></td><td class="tip">—</td><td class="free">—</td></tr>
+        <tr><td class="time">17:30–17:45</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">Grab 前往會安古鎮</div><div class="loc">~10–15 分鐘</div></td><td class="tip">—</td><td class="cost">~HKD 25</td></tr>
+        <tr><td class="time">17:45–19:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">會安古鎮：日本橋 · 黃牆 · 古宅（黃昏燈籠亮起）</div></td><td class="tip">古鎮套票 HKD 37/人（含 5 古蹟）</td><td class="cost">~HKD 74</td></tr>
+        <tr><td class="time">19:00–20:30</td><td class="act"><span class="tag t-eat">晚餐</span><div class="a" style="margin-top:4px">會安晚餐（海鮮）：秋盆河景 Red Gecko / Cẩm Nam 島河鮮，或 Bá Lễ Well DIY / Morning Glory</div></td><td class="tip">想食海鮮見「🦐 海鮮推薦」；旺季晚市建議訂位</td><td class="cost">~HKD 180–260</td></tr>
+        <tr><td class="time">20:30–21:30</td><td class="act"><span class="tag t-play">玩樂</span><div class="a" style="margin-top:4px">🏮 秋盆河燈籠船 + 放水燈 + 燈籠街</div></td><td class="tip">每船 HKD 52（1–3 人）；水燈數蚊</td><td class="cost">~HKD 120</td></tr>
+        <tr><td class="time">21:30–22:00</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">Grab 回 An Bang</div></td><td class="tip">—</td><td class="cost">~HKD 25</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="day" id="day2">
+    <div class="day-head"><div class="n">DAY 2</div><h3>🌉 巴拿山 &amp; 佛手金橋（全日）</h3><div class="theme">早出發（~1 小時），纜車、金橋、法國村、樂園；晚上酒店 Spa</div><a class="rlink" href="https://www.google.com/maps/dir/Sol+An+Bang+Beach+Resort+and+Spa/Sun+World+Ba+Na+Hills" target="_blank" rel="noopener">🗺️ 本日 Google 地圖路線 ↗</a></div>
+    <div class="tbl-wrap"><table class="sched">
+      <thead><tr><th>時間</th><th>行程</th><th>貼士</th><th>預算(2人)</th></tr></thead>
+      <tbody>
+        <tr><td class="time">06:30–07:15</td><td class="act"><span class="tag t-eat">早餐</span><div class="a" style="margin-top:4px">起床 · 酒店早餐 · 準備</div></td><td class="tip">帶薄外套（山上涼）</td><td class="free">已包</td></tr>
+        <tr><td class="time">07:15–08:30</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">前往巴拿山（包車連司機等候）</div><div class="loc">An Bang → 巴拿山 ~60–75 分</div></td><td class="tip">會安出發比市區稍遠，早啲出發</td><td class="cost">~HKD 450（來回/等候）</td></tr>
+        <tr><td class="time">08:30–09:00</td><td class="act"><span class="tag t-play">玩樂</span><div class="a" style="margin-top:4px">取票 · 世界紀錄纜車上山</div></td><td class="tip">Klook 買飛平過現場</td><td class="cost">~HKD 500（門票2人）</td></tr>
+        <tr><td class="time">09:00–10:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">佛手金橋 Golden Bridge 打卡</div></td><td class="tip">趁早人少、天清</td><td class="free">已包</td></tr>
+        <tr><td class="time">10:00–11:30</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">法國村 · 花園 · 教堂區</div></td><td class="tip">歐陸建築上鏡</td><td class="free">已包</td></tr>
+        <tr><td class="time">11:30–12:30</td><td class="act"><span class="tag t-play">玩樂</span><div class="a" style="margin-top:4px">Fantasy Park 室內遊樂場</div></td><td class="tip">落雨都玩得</td><td class="free">已包</td></tr>
+        <tr><td class="time">12:30–13:30</td><td class="act"><span class="tag t-eat">午餐</span><div class="a" style="margin-top:4px">山上午餐（自助餐 / 單點）</div></td><td class="tip">自助餐約 HKD 108/人</td><td class="cost">~HKD 220</td></tr>
+        <tr><td class="time">13:30–15:00</td><td class="act"><span class="tag t-play">玩樂</span><div class="a" style="margin-top:4px">Debay 酒窖 · 續玩 · 觀景</div></td><td class="tip">留意午後或有雨</td><td class="free">已包</td></tr>
+        <tr><td class="time">15:00–15:30</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">乘纜車下山</div></td><td class="tip">—</td><td class="free">已包</td></tr>
+        <tr><td class="time">15:30–17:00</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">回 An Bang</div></td><td class="tip">—</td><td class="free">已含車費</td></tr>
+        <tr><td class="time">17:00–18:30</td><td class="act"><span class="tag t-rest">按摩</span><div class="a" style="margin-top:4px">💆 酒店 Spa 按摩 / 泳池休息</div></td><td class="tip">度假村 Spa 方便；或 Grab 去會安平價按摩</td><td class="cost">~HKD 300–500</td></tr>
+        <tr><td class="time">18:30–20:00</td><td class="act"><span class="tag t-eat">晚餐</span><div class="a" style="margin-top:4px">An Bang 海鮮晚餐（Nam Gia / Suong / Hung）</div></td><td class="tip">睇住海食；先確認每公斤價（見海鮮推薦）</td><td class="cost">~HKD 180–260</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="day" id="day3">
+    <div class="day-head"><div class="n">DAY 3</div><h3>🏙️ 五行山 · 峴港市區 · 龍橋噴火（北上一日）</h3><div class="theme">集中一日去峴港：五行山、市區手信、傍晚海鮮 + 龍橋噴火（週末）</div><a class="rlink" href="https://www.google.com/maps/dir/Sol+An+Bang+Beach+Resort+and+Spa/Marble+Mountains+Da+Nang/Han+Market+Da+Nang/Dragon+Bridge+Da+Nang" target="_blank" rel="noopener">🗺️ 本日 Google 地圖路線 ↗</a></div>
+    <div class="tbl-wrap"><table class="sched">
+      <thead><tr><th>時間</th><th>行程</th><th>貼士</th><th>預算(2人)</th></tr></thead>
+      <tbody>
+        <tr><td class="time">07:30–08:30</td><td class="act"><span class="tag t-eat">早餐</span><div class="a" style="margin-top:4px">起床 · 酒店早餐</div></td><td class="tip">建議半日/全日包車，靈活順路</td><td class="free">已包</td></tr>
+        <tr><td class="time">08:30–09:00</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">出發往五行山</div><div class="loc">An Bang → 五行山 ~20 分</div></td><td class="tip">北上順路第一站</td><td class="cost">~HKD 150（半日包車起）</td></tr>
+        <tr><td class="time">09:00–10:30</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">五行山 Marble Mountains：電梯上、行落山、洞穴佛寺</div></td><td class="tip">門票 HKD 12/人 + 電梯 HKD 5–9</td><td class="cost">~HKD 45</td></tr>
+        <tr><td class="time">10:30–11:15</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">前往峴港市中心</div><div class="loc">~25 分</div></td><td class="tip">—</td><td class="free">已含車費</td></tr>
+        <tr><td class="time">11:15–12:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">粉紅教堂 · 占族雕刻博物館</div></td><td class="tip">博物館 HKD 18；室內避雨佳</td><td class="cost">~HKD 36</td></tr>
+        <tr><td class="time">12:00–13:00</td><td class="act"><span class="tag t-eat">午餐</span><div class="a" style="margin-top:4px">Bún Chả Cá 109（米芝蓮）/ 廣麵</div></td><td class="tip">地道又平</td><td class="cost">~HKD 80–120</td></tr>
+        <tr><td class="time">13:00–14:30</td><td class="act"><span class="tag t-see">購物</span><div class="a" style="margin-top:4px">韓市場 手信 + Con 市場 / Cộng 椰子咖啡</div></td><td class="tip">要講價；買咖啡、腰果、乾海鮮</td><td class="cost">~HKD 300–400</td></tr>
+        <tr><td class="time">14:30–16:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">APEC 公園 · 愛情橋 / Vincom 商場（雨天避雨）</div></td><td class="tip">午後陣雨可入商場</td><td class="cost">~HKD 60</td></tr>
+        <tr><td class="time">16:00–18:00</td><td class="act"><span class="tag t-rest">休息</span><div class="a" style="margin-top:4px">咖啡 / 河邊 hea（留市區等晚餐）</div></td><td class="tip">唔使來回 An Bang，留市區慳車程</td><td class="cost">~HKD 60</td></tr>
+        <tr><td class="time">18:00–20:00</td><td class="act"><span class="tag t-eat">晚餐</span><div class="a" style="margin-top:4px">An Thuong 海鮮晚餐（Bé Mặn / My Hanh）</div></td><td class="tip">先確認每公斤價錢</td><td class="cost">~HKD 300–500</td></tr>
+        <tr><td class="time">20:30–21:15</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">🐉 龍橋佔位 + 噴火噴水表演（21:00）</div></td><td class="tip">週五六日 21:00；20:30 到有位</td><td class="free">免費</td></tr>
+        <tr><td class="time">21:15–22:15</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">Grab 回 An Bang</div><div class="loc">~40–45 分</div></td><td class="tip">夜歸較長車程，早抖</td><td class="cost">~HKD 130–160</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note info" style="margin:0 0 6px"><span class="t">🔧 Optional</span>想去<b>山茶靈應寺 Lady Buddha</b>可加喺今朝最早（~08:00 出發，An Bang 去山茶 ~55–60 分），但會令今日好趕；建議取捨。</div>
+  </div>
+
+  <div class="day" id="day4">
+    <div class="day-head"><div class="n">DAY 4 · 回程日</div><h3>🏮 會安深度 / An Bang 海灘 · 椰林籃船 · 手信 → 回港</h3><div class="theme">門口嘅會安同海灘慢慢玩，椰林籃船，臨走按摩 + 手信</div><a class="rlink" href="https://www.google.com/maps/dir/Sol+An+Bang+Beach+Resort+and+Spa/Cam+Thanh+Coconut+Forest+Hoi+An/Da+Nang+International+Airport" target="_blank" rel="noopener">🗺️ 本日 Google 地圖路線 ↗</a></div>
+    <div class="tbl-wrap"><table class="sched">
+      <thead><tr><th>時間</th><th>行程</th><th>貼士</th><th>預算(2人)</th></tr></thead>
+      <tbody>
+        <tr><td class="time">07:30–08:30</td><td class="act"><span class="tag t-eat">早餐</span><div class="a" style="margin-top:4px">起床 · 酒店早餐 · 執拾</div></td><td class="tip">可先退房、寄存行李</td><td class="free">已包</td></tr>
+        <tr><td class="time">08:30–10:00</td><td class="act"><span class="tag t-see">景點</span><div class="a" style="margin-top:4px">An Bang 私人海灘 + 泳池 hea（或會安古鎮日間）</div></td><td class="tip">早上海灘涼快</td><td class="free">免費</td></tr>
+        <tr><td class="time">10:00–11:30</td><td class="act"><span class="tag t-play">玩樂</span><div class="a" style="margin-top:4px">椰林籃船 Cam Thanh（或越式烹飪班）</div><div class="loc">~15 分</div></td><td class="tip">竹籃船穿椰林、影相一流</td><td class="cost">~HKD 110</td></tr>
+        <tr><td class="time">11:30–13:00</td><td class="act"><span class="tag t-see">購物</span><div class="a" style="margin-top:4px">會安古鎮：日本橋 · 裁縫訂造 · 白玫瑰餃 · 咖啡 + 手信</div></td><td class="tip">白天古鎮較涼靜好行</td><td class="cost">~HKD 200</td></tr>
+        <tr><td class="time">13:00–14:00</td><td class="act"><span class="tag t-eat">午餐</span><div class="a" style="margin-top:4px">會安 / An Bang 午餐（Cao Lầu 高樓麵）</div></td><td class="tip">高樓麵只此會安有</td><td class="cost">~HKD 120</td></tr>
+        <tr><td class="time">14:00–15:00</td><td class="act"><span class="tag t-rest">按摩</span><div class="a" style="margin-top:4px">💆 酒店退房 · 最後 Spa 按摩 / 泳池</div></td><td class="tip">出發前放鬆</td><td class="cost">~HKD 300–450</td></tr>
+        <tr><td class="time">15:00–16:00</td><td class="act"><span class="tag t-see">購物</span><div class="a" style="margin-top:4px">最後手信 / 咖啡</div></td><td class="tip">—</td><td class="cost">~HKD 150</td></tr>
+        <tr><td class="time">16:00–16:45</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">Grab 回峴港機場</div><div class="loc">~30–40 分</div></td><td class="tip">國際航班宜提早約 3 小時到</td><td class="cost">~HKD 130–160</td></tr>
+        <tr><td class="time">16:45–18:30</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">機場 Check-in · 退稅 · 免稅店</div></td><td class="tip">—</td><td class="free">—</td></tr>
+        <tr><td class="time">約 19:00</td><td class="act"><span class="tag t-move">交通</span><div class="a" style="margin-top:4px">✈️ 峴港 → 香港 航班（時間待定）</div></td><td class="tip">回程加 1 小時時差</td><td class="cost">見機票</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note warn" style="margin:0 0 6px"><span class="t">🔧 航班調整</span>若<b>早機/中午機</b>：刪去下午行程，早上椰林籃船/會安後直接去機場。若<b>深夜機</b>：可加會安燈籠再一次或按摩。<b>An Bang 去機場 30–40 分，務必預留 buffer。</b></div>
+  </div>
+</section>
+
+<section id="seafood">
+  <div class="sec-head"><span class="k">🦐</span><h2>海鮮推薦</h2></div>
+  <div class="divider"></div>
+  <p class="sec-desc">你住 An Bang 海邊，<b>會安/Cua Dai 沙灘海鮮</b>就喺附近；Day 3 北上峴港則有兩間米芝蓮海鮮。人均為一餐 HKD 估價（海鮮按重量計）。</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>餐廳</th><th>地區</th><th>特色</th><th>人均 (HKD)</th><th>貼士</th><th>地圖</th></tr></thead>
+    <tbody>
+      <tr><td colspan="6" style="background:var(--brand-light);font-weight:800;color:var(--brand-dark)">會安海邊（近 Sol An Bang）</td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Nam Gia Seafood</span></td><td>An Bang 海灘</td><td>海景餐廳、每日新鮮（魷魚/蝦/蟹/魚/蜆）</td><td class="cost">100–200</td><td>睇住海食、黃昏最正</td><td><a href="https://www.google.com/maps/search/Nam+Gia+Seafood+An+Bang+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Suong Hoi An</span></td><td>An Bang 海灘</td><td>開放式、海鮮火鍋、羅望子蟹、香茅蒸蜆、烤帶子</td><td class="cost">120–210</td><td>環境靚、菜式多</td><td><a href="https://www.google.com/maps/search/Suong+Restaurant+An+Bang+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Hung Seafood</span></td><td>An Bang 海灘</td><td>即劏活海鮮，價錢實惠</td><td class="cost">90–160</td><td>抵食本地之選</td><td><a href="https://www.google.com/maps/search/Hung+Seafood+An+Bang+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Sau Restaurant</span></td><td>An Bang</td><td>本地/外籍人士激讚、新鮮友善</td><td class="cost">90–150</td><td>細店、氣氛好</td><td><a href="https://www.google.com/maps/search/Sau+Restaurant+An+Bang+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Hon Restaurant</span></td><td>Cua Dai 海灘</td><td>本地公認最新鮮、服務好、風景靚</td><td class="cost">120–210</td><td>可訂位</td><td><a href="https://www.google.com/maps/search/Hon+Restaurant+Cua+Dai+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Van Phi</span></td><td>Cua Dai 海灘</td><td>沙灘邊、燈籠茅屋、寧靜</td><td class="cost">120–230</td><td>浪漫、情侶啱</td><td><a href="https://www.google.com/maps/search/Van+Phi+Seafood+Cua+Dai+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td colspan="6" style="background:var(--gold-soft);font-weight:800;color:#8a6111">會安古鎮 / 河鮮（Day 1 傍晚順食）</td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Cẩm Nam 島 河鮮</span></td><td>會安古鎮旁小島</td><td>河蜆撈 hến trộn · 米餅 bánh đập · 烤河魚（本地風味、遊客少）</td><td class="cost">50–120</td><td>抵食地道；單車/電單車過橋即到</td><td><a href="https://www.google.com/maps/search/Cam+Nam+Island+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">Red Gecko</span></td><td>日本橋前 · 秋盆河景</td><td>海鮮 + 會安菜，燈籠河景氣氛</td><td class="cost">100–200</td><td>睇日本橋 / 河景、浪漫</td><td><a href="https://www.google.com/maps/search/Red+Gecko+Restaurant+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">秋盆河邊 河景海鮮</span></td><td>Bạch Đằng 河邊</td><td>魚火鍋 · 薑蒸魷 · 羅望子辣蟹，燈籠夜景</td><td class="cost">120–220</td><td>配燈籠船一晚玩勻</td><td><a href="https://www.google.com/maps/search/Bach+Dang+Street+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">The Market / Morning Glory</span></td><td>會安古鎮</td><td>名廚 Ms Vy 會安菜含海鮮，環境靚</td><td class="cost">80–150</td><td>晚市建議訂位</td><td><a href="https://www.google.com/maps/search/Morning+Glory+Restaurant+Hoi+An" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td colspan="6" style="background:var(--coral-soft);font-weight:800;color:#b23c1f">峴港（Day 3 北上順食）</td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">⭐ Bé Mặn</span></td><td>美溪海灘</td><td>魚缸即揀活海鮮，米芝蓮收錄</td><td class="cost">120–240</td><td><b>落單前確認每公斤價</b></td><td><a href="https://www.google.com/maps/search/Be+Man+Seafood+Da+Nang" target="_blank" rel="noopener">地圖</a></td></tr>
+      <tr><td><span style="font-weight:800;color:var(--brand-dark)">⭐ My Hanh 美幸海鮮</span></td><td>山茶海邊</td><td>招牌避風塘瀨尿蝦，米芝蓮收錄</td><td class="cost">100–240</td><td>4.7★ 高質；早到免等、收現金</td><td><a href="https://www.google.com/maps/search/My+Hanh+Seafood+Da+Nang" target="_blank" rel="noopener">地圖</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><span class="t">🦐 食海鮮貼士</span>海鮮<b>按重量計</b>，落單前<b>確認每公斤價錢</b>先劏；即揀活海鮮最新鮮；多數<b>收現金</b>；~6pm 去避免等位。An Bang/Cua Dai 海邊餐廳黃昏睇住海食最有 feel。</div>
+</section>
+
+<section id="budget">
+  <div class="sec-head"><span class="k">💰</span><h2>預算速覽（2 人 · 機票另計）</h2></div>
+  <div class="divider"></div>
+  <p class="sec-desc">機票約 <b>HKD 2,700/人</b>（2 人 ~5,400，另計）。以下為當地開支估算，目標 <b>HKD 6,000–8,000</b>。</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>項目</th><th>估算 (HKD · 2人)</th><th>備註</th></tr></thead>
+    <tbody>
+      <tr><td>🏨 酒店 3 晚</td><td class="cost">1,140–1,320</td><td>Sol An Bang ~380–440/晚（含早餐）</td></tr>
+      <tr><td>🚕 交通</td><td class="cost">1,150–1,300</td><td>機場來回 ~300 · Day 2 包車 450 · Day 3 包車+夜歸 ~450 · 市內 Grab</td></tr>
+      <tr><td>🎫 門票 / 活動</td><td class="cost">~890</td><td>巴拿山 500 · 會安套票 74 · 燈籠船 120 · 五行山 45 · 椰林籃船 110 · 博物館 36</td></tr>
+      <tr><td>🍜 餐飲</td><td class="cost">1,700–2,300</td><td>早餐已包；含 2 餐海鮮 + 地道小食 + 咖啡</td></tr>
+      <tr><td>💆 按摩 ×2 次</td><td class="cost">600–950</td><td>酒店 Spa / 會安平價按摩</td></tr>
+      <tr><td>🛍️ 手信雜費</td><td class="cost">500–700</td><td>韓市場 + 會安手信</td></tr>
+      <tr><td style="font-weight:900;color:var(--brand-dark)">合計（當地開支）</td><td class="cost" style="font-size:1.05rem">≈ 6,000–7,500</td><td class="free">✅ 落在 6,000–8,000 目標內</td></tr>
+    </tbody>
+  </table></div>
+  <p class="rate" style="margin-top:8px">想再慳：Day 3 改 Grab 逐程唔包車（慳 ~200）、按摩做 1 次（慳 ~300–450）。想歎啲：加一餐河景靚晚餐 / 水療套餐（+300–600）。</p>
+</section>
+
+<section id="book">
+  <div class="sec-head"><span class="k">🔗</span><h2>預訂與連結</h2></div>
+  <div class="divider"></div>
+  <div class="booklinks">
+    <a href="https://solanbang.com/" target="_blank" rel="noopener">🌐 官方網站</a>
+    <a href="https://www.google.com/maps/search/Sol+An+Bang+Beach+Resort+and+Spa" target="_blank" rel="noopener">📍 Google 地圖 / 評價</a>
+    <a href="https://www.booking.com/searchresults.html?ss=Sol+An+Bang+Beach+Resort+Spa" target="_blank" rel="noopener">Booking.com</a>
+    <a href="https://www.agoda.com/search?q=Sol+An+Bang+Beach+Resort+Spa" target="_blank" rel="noopener">Agoda</a>
+    <a href="https://www.tripadvisor.com/Hotel_Review-g298082-d13975151-Reviews-Sol_An_Bang_Beach_Resort_Spa-Hoi_An_Quang_Nam_Province.html" target="_blank" rel="noopener">Tripadvisor 評價</a>
+  </div>
+  <p class="rate" style="margin-top:12px">價錢隨日期浮動；旺季（7 月暑假）宜提早訂。</p>
+</section>
+
+<section id="tips">
+  <div class="sec-head"><span class="k">📌</span><h2>入住貼士</h2></div>
+  <div class="divider"></div>
+  <div class="grid g2">
+    <div class="card"><h3>🚕 交通</h3><p>會安/椰林近，Grab 平；去峴港市區/機場 ~40 分、~HKD 130–160。建議 Day 2 包車（巴拿山）、Day 3 半日包車（市區）。</p></div>
+    <div class="card"><h3>🍽️ 用餐</h3><p>晚餐主力會安古鎮 + An Bang 海灘餐廳；峴港海鮮留 Day 3。早餐酒店食。</p></div>
+    <div class="card"><h3>💆 按摩</h3><p>酒店有 Spa；會安古鎮亦多平價按摩（60 分約 HKD 100–160）。</p></div>
+    <div class="card"><h3>🏖️ 海灘</h3><p>用度假村私人沙灘段 + 泳池較穩陣；公共海灘偶有雜物。日出 An Bang 好靚。</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="font-weight:800;color:#fff;font-size:1.02rem;margin-bottom:6px">索安邦海灘水療度假村 Sol An Bang · 會安 4 日 3 夜行程</p>
+    <p>2 人 · 會安 An Bang 海灘為基地 · 價錢與車程為參考估計，實際以現場 / 網上預訂為準。</p>
+  </div>
+</footer>
+<button class="totop" id="totop" title="回到頂部">↑</button>
+<script>
+var tt=document.getElementById('totop');
+window.addEventListener('scroll',function(){if(window.pageYOffset>500){tt.classList.add('show')}else{tt.classList.remove('show')}});
+tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
