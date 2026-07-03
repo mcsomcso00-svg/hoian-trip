@@ -94,6 +94,29 @@ section,.day{scroll-margin-top:70px}
 .checklist li{display:flex;align-items:flex-start;gap:9px}
 .checklist input{margin-top:5px;accent-color:var(--brand);width:16px;height:16px}
 footer{background:var(--brand-dark);color:#cfe4e2;padding:30px 0;margin-top:38px;font-size:.86rem}
+@media(max-width:760px){
+  body{font-size:15.5px}
+  .wrap{padding:0 14px}
+  section{padding:28px 0 4px}
+  .hero-inner{padding:30px 0 28px}
+  .day-head{padding:15px 16px}
+  .card{padding:16px}
+  .note{padding:13px 14px}
+}
+@media(max-width:640px){
+  .sched{min-width:0}
+  .sched thead{display:none}
+  .sched tbody tr{display:block;padding:12px 14px;border-top:1px solid var(--line)}
+  .sched tbody td{display:block;border:none;padding:2px 0}
+  .sched td.time{font-size:1.02rem;color:var(--brand);padding-bottom:2px}
+  .sched td.tip{font-size:.84rem}
+  .sched td.tip::before{content:'💡 '}
+  .sched td.cost::before,.sched td.free::before{content:'💰 '}
+  .sched td:last-child{padding-top:5px}
+  .sched td:last-child a{display:inline-block;background:var(--brand-light);color:var(--brand-dark);font-weight:800;padding:5px 16px;border-radius:999px;text-decoration:none;font-size:.85rem}
+  .sched td:last-child a::before{content:'🗺️ '}
+  table{min-width:480px}
+}
 @media print{.bar,.totop,.btns,.hbtn,.day-head .rlink{display:none!important}.hero{color:#083f43;background:#fff!important;border-bottom:2px solid var(--brand)}.hero .chip{background:#eee;color:#083f43}.card,.tbl-wrap,.day{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
